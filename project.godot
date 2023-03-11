@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="Stay inside"
-run/main_scene="res://nodemap_demo.tscn"
+run/main_scene="res://scene/monster.tscn"
 config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
+
+[display]
+
+window/size/viewport_width=1200
+window/size/viewport_height=900
+window/size/borderless=true
 
 [rendering]
 
