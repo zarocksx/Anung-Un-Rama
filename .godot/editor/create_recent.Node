@@ -1,0 +1,11 @@
+MeshInstance3D
+CSGSphere3D
+Camera3D
+Node3D
+SpotLight3D
+OmniLight3D
+MultiMeshInstance3D
+GridMap
+WorldEnvironment
+LightmapGI
+DirectionalLight3D
