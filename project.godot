@@ -15,13 +15,6 @@ run/main_scene="res://nodemap_demo.tscn"
 config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
-[input]
-
-test={
-"deadzone": 0.5,
-"events": [null]
-}
-
 [rendering]
 
-environment/defaults/default_environment="res://default_env.tres"
+environment/default_environment="res://default_env.tres"
