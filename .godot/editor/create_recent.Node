@@ -1,10 +1,10 @@
+Camera3D
+Node3D
+SpotLight3D
 OmniLight3D
 MeshInstance3D
-Node3D
 MultiMeshInstance3D
 GridMap
-SpotLight3D
 WorldEnvironment
-Camera3D
 LightmapGI
 DirectionalLight3D

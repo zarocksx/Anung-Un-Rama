@@ -1,46 +1,50 @@
 2a60927148abd1d33b818b535e306557
-::res://::1678471662
-default_env.tres::Environment::-1::1678470657::0::1::::<><>::
+::res://::1678542013
+default_env.tres::Environment::2745892806381203326::1678542459::0::1::::<><>::
 icon.png::CompressedTexture2D::3098106318730026048::1678461591::1678471662::1::::<><>::
 README.md::TextFile::-1::1678461838::0::1::::<><>::
 Spatial.tscn::PackedScene::-1::1678470657::0::1::::<><>::
-::res://asset/::1678472742
-01 - Brick.material::StandardMaterial3D::-1::1678469258::0::1::::<><>::
-01 - Default.material::StandardMaterial3D::-1::1678469258::0::1::::<><>::
-02 - Default.material::StandardMaterial3D::-1::1678469274::0::1::::<><>::
-02 - Stone Wall.material::StandardMaterial3D::-1::1678469257::0::1::::<><>::
-03 - Default.material::StandardMaterial3D::-1::1678469267::0::1::::<><>::
-cath test.fbx::PackedScene::4181311505948448113::1665665596::1678470754::1::::<><>::
-Pilar_Cath.fbx::PackedScene::6209422146494166163::1669081994::1678470728::1::::<><>::
-ref taill.fbx::PackedScene::1068816475238279014::1669157260::1678470728::1::::<><>::
-SM_ArchRosace_00.fbx::PackedScene::357550833032211155::1677802206::1678470724::1::::<><>::
-SM_ArcNef_00.fbx::PackedScene::6937976791926803482::1669082240::1678471687::1::::<><>::
-SM_ArcNef_T01_00.fbx::PackedScene::8733269284018842405::1676481864::1678471687::1::::<><>::
-SM_BaseWall_Cath_00.fbx::PackedScene::3244819583016186896::1669084696::1678471686::1::::<><>::
-SM_CathDoor_00.fbx::PackedScene::4187590362242815210::1676504614::1678471686::1::::<><>::
-SM_CathWallDoor_00.fbx::PackedScene::9095247317028096525::1677775272::1678471686::1::::<><>::
-SM_CathWall_T00_00.fbx::PackedScene::8273149361612157664::1669229360::1678471686::1::::<><>::
-SM_CathWall_T01_00.fbx::PackedScene::9028124757636504356::1669229252::1678471685::1::::<><>::
-SM_CathWall_T02_00.fbx::PackedScene::1712767532700982221::1669245628::1678471680::1::::<><>::
-SM_CathWall_T03_00.fbx::PackedScene::4970356156526312660::1669334634::1678471678::1::::<><>::
-SM_CathWall_T04_00.fbx::PackedScene::7554391694039581233::1677794272::1678471674::1::::<><>::
-SM_CathWindowArch_00.fbx::PackedScene::1201450320505866694::1677775906::1678471670::1::::<><>::
-SM_CathWindow_T01_00.fbx::PackedScene::3400167296341051914::1677701712::1678471669::1::::<><>::
-SM_CWPilar_T03_00.fbx::PackedScene::4830567030409496035::1669243846::1678471667::1::::<><>::
-SM_CW_Ornement_T00_00.fbx::PackedScene::5477837628284378013::1669235214::1678471665::1::::<><>::
-SM_OrnementWall_00.fbx::PackedScene::5028898103672849717::1677775892::1678471665::1::::<><>::
-SM_Pilar_Cath_T01_00.fbx::PackedScene::7172445451760316648::1669156500::1678471665::1::::<><>::
-SM_SmallPillar_T00.fbx::PackedScene::1575470581300751960::1669154412::1678471664::1::::<><>::
-SM_StoneTileFloor_T01_00.fbx::PackedScene::3003863131789939387::1678316860::1678471664::1::::<><>::
-Solid Glass.material::StandardMaterial3D::-1::1678469258::0::1::::<><>::
-::res://asset/brick/::1678472465
+::res://asset/::1678537151
+::res://asset/brick/::1678537380
+brick.tres::StandardMaterial3D::5577422727692800580::1678537380::0::1::::<><>::uid://cnpr33f3aeq30<>uid://ch8e3fuchgrm1<>uid://dl6rb0pa0dgs6
 SM_Pot_trimSheet_Plane_DefaultMaterial_BaseColor.png::CompressedTexture2D::5717345671748081393::1677687872::1678471813::1::::<><>::
 SM_Pot_trimSheet_Plane_DefaultMaterial_BaseColor_02.png::CompressedTexture2D::5870833175182050851::1677722118::1678471857::1::::<><>::
 SM_Pot_trimSheet_Plane_DefaultMaterial_Normal.png::CompressedTexture2D::7996370352433800963::1677687872::1678472158::1::::<><>::
 SM_Pot_trimSheet_Plane_DefaultMaterial_OcclusionRoughnessMetallic.png::CompressedTexture2D::5332580902550124502::1677687872::1678472465::1::::<><>::
-::res://asset/stone_wall/::1678472748
+::res://asset/fbx/::1678537037
+Pilar_Cath.fbx::PackedScene::6209422146494166163::1669081994::1678537037::1::::<><>::uid://clp0lqdjghcjs<>uid://csly448tkrdsw
+ref taill.fbx::PackedScene::1068816475238279014::1669157260::1678537037::1::::<><>::
+SM_ArchRosace_00.fbx::PackedScene::357550833032211155::1677802206::1678537033::1::::<><>::
+SM_ArcNef_00.fbx::PackedScene::6937976791926803482::1669082240::1678537031::1::::<><>::uid://buh5agifxejyy
+SM_ArcNef_T01_00.fbx::PackedScene::8733269284018842405::1676481864::1678537031::1::::<><>::uid://clp0lqdjghcjs
+SM_BaseWall_Cath_00.fbx::PackedScene::3244819583016186896::1669084696::1678537031::1::::<><>::uid://clp0lqdjghcjs
+SM_CathDoor_00.fbx::PackedScene::4187590362242815210::1676504614::1678537031::1::::<><>::
+SM_CathWallDoor_00.fbx::PackedScene::9095247317028096525::1677775272::1678537031::1::::<><>::
+SM_CathWall_T00_00.fbx::PackedScene::8273149361612157664::1669229360::1678537030::1::::<><>::
+SM_CathWall_T01_00.fbx::PackedScene::9028124757636504356::1669229252::1678537030::1::::<><>::
+SM_CathWall_T02_00.fbx::PackedScene::1712767532700982221::1669245628::1678537026::1::::<><>::
+SM_CathWall_T03_00.fbx::PackedScene::4970356156526312660::1669334634::1678537025::1::::<><>::
+SM_CathWall_T04_00.fbx::PackedScene::7554391694039581233::1677794272::1678537022::1::::<><>::uid://clp0lqdjghcjs<>uid://csly448tkrdsw
+SM_CathWindowArch_00.fbx::PackedScene::1201450320505866694::1677775906::1678537020::1::::<><>::
+SM_CathWindow_T01_00.fbx::PackedScene::3400167296341051914::1677701712::1678537020::1::::<><>::uid://clp0lqdjghcjs<>uid://csly448tkrdsw
+SM_CWPilar_T03_00.fbx::PackedScene::4830567030409496035::1669243846::1678537018::1::::<><>::
+SM_CW_Ornement_T00_00.fbx::PackedScene::5477837628284378013::1669235214::1678537017::1::::<><>::
+SM_OrnementWall_00.fbx::PackedScene::5028898103672849717::1677775892::1678537017::1::::<><>::
+SM_Pilar_Cath_T01_00.fbx::PackedScene::7172445451760316648::1669156500::1678537017::1::::<><>::
+SM_SmallPillar_T00.fbx::PackedScene::1575470581300751960::1669154412::1678537016::1::::<><>::
+SM_StoneTileFloor_T01_00.fbx::PackedScene::3003863131789939387::1678316860::1678537016::1::::<><>::uid://csly448tkrdsw
+::res://asset/meshLibrary/::1678490205
+room_1.tres::MeshLibrary::2684247986188475063::1678490204::0::1::::<><>::uid://clp0lqdjghcjs<>uid://csly448tkrdsw<>uid://buh5agifxejyy
+::res://asset/stone_wall/::1678542026
+pilar_cath.tscn::PackedScene::-1::1678537015::0::1::::<><>::uid://cup5jmsaqftt0<>uid://clp0lqdjghcjs<>uid://csly448tkrdsw
+stone_wall.tres::StandardMaterial3D::6060459279048088270::1678473029::0::1::::<><>::uid://dtnkvtbwuw4hn<>uid://pyanvrhx0bqh<>uid://jj1ajyjkngnn
 Stone_Wall_basecolor.png::CompressedTexture2D::8520332663120024671::1664650424::1678472788::1::::<><>::
 Stone_Wall_height.png::CompressedTexture2D::8509819226996443930::1664650430::1678472758::1::::<><>::
 Stone_Wall_metallic.png::CompressedTexture2D::7588348259316151408::1664650430::1678472816::1::::<><>::
 Stone_Wall_normal.png::CompressedTexture2D::1102402065590480131::1664650428::1678472864::1::::<><>::
 Stone_Wall_roughness.png::CompressedTexture2D::651858144549015303::1664650430::1678472923::1::::<><>::
+test.tscn::PackedScene::8969443908648015608::1678485140::0::1::::<><>::uid://clp0lqdjghcjs<>uid://csly448tkrdsw<>uid://buh5agifxejyy
+::res://scene/::1678542059
+floor.tscn::PackedScene::7133408504958549971::1678542521::0::1::::<><>::uid://csly448tkrdsw<>uid://cpv4087bb5jod<>uid://dl6rb0pa0dgs6<>uid://clp0lqdjghcjs
+room_1.tscn::PackedScene::2476667509308768975::1678542015::0::1::::<><>::uid://csly448tkrdsw<>uid://cpv4087bb5jod<>uid://dl6rb0pa0dgs6<>uid://clp0lqdjghcjs
+room_2.tscn::PackedScene::374561095953012054::1678542462::0::1::::<><>::uid://csly448tkrdsw<>uid://clp0lqdjghcjs

@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8jtcttgvernj"]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://cup5jmsaqftt0" path="res://asset/Pilar_Cath.fbx" id="1_5ttut"]
+[ext_resource type="PackedScene" uid="uid://cup5jmsaqftt0" path="res://asset/fbx/Pilar_Cath.fbx" id="1_5ttut"]
 [ext_resource type="Material" uid="uid://clp0lqdjghcjs" path="res://asset/brick/brick.tres" id="2_tr10j"]
 [ext_resource type="Material" uid="uid://csly448tkrdsw" path="res://asset/stone_wall/stone_wall.tres" id="3_ib66l"]
 
