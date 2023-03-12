@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c5edniadeb6ob"]
+[gd_scene load_steps=12 format=3 uid="uid://c5edniadeb6ob"]
 
 [ext_resource type="PackedScene" uid="uid://3tleafpba3dr" path="res://scene/room_3.tscn" id="1_xs2yo"]
 [ext_resource type="PackedScene" uid="uid://bbjyl77j6lvxf" path="res://scene/room_1.tscn" id="2_agdwg"]
@@ -8,6 +8,7 @@
 [ext_resource type="Material" uid="uid://clp0lqdjghcjs" path="res://asset/brick/brick.tres" id="5_cgnkx"]
 [ext_resource type="Material" uid="uid://csly448tkrdsw" path="res://asset/stone_wall/stone_wall.tres" id="6_xtou1"]
 [ext_resource type="PackedScene" uid="uid://b4fe2spilcjhg" path="res://scene/monster.tscn" id="7_6bq7y"]
+[ext_resource type="Script" path="res://scene/cameraController.gd" id="9_64pxk"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_wp3nl"]
 _surfaces = [{
@@ -263,7 +264,19 @@ surface_material_override/1 = ExtResource("6_xtou1")
 [node name="monster" parent="." instance=ExtResource("7_6bq7y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1875, 1.81707, -3.86347)
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="debug-cam" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 12.166, 15.124, -2.38549)
 projection = 1
 size = 100.0
+
+[node name="cameraController" type="Node3D" parent="."]
+transform = Transform3D(-0.2067, 0.682429, -0.701117, 0.0425061, 0.722179, 0.690399, 0.977481, 0.112904, -0.178282, -15.6083, 6.52007, -3.2543)
+script = ExtResource("9_64pxk")
+
+[node name="cam1" type="Camera3D" parent="cameraController" groups=["camera"]]
+transform = Transform3D(-0.699182, 0.382162, -0.604232, -0.5664, 0.219642, 0.794323, 0.436274, 0.897613, 0.0628871, -14.7585, 37.3403, -38.4427)
+fov = 93.7
+near = 0.916
+
+[node name="cam2" type="Camera3D" parent="cameraController" groups=["camera"]]
+transform = Transform3D(1, 7.45058e-09, -1.49012e-08, 7.45058e-09, 1, 4.09782e-08, -1.49012e-08, 1.11759e-08, 1, 0, 0, 0)

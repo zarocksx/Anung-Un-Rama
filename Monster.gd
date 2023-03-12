@@ -2,6 +2,7 @@ extends Node
 
 
 @export var neighbor_distance = 5;
+@export var SPEED = 0.1
 var waypoints = [];
 var important_waypoints = [];
 var closest_waypoint;
@@ -9,6 +10,7 @@ var astar = AStar3D.new();
 var path
 var tween
 var target_index = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -31,8 +33,8 @@ func _ready():
 	move()
 
 func move() -> void:
-	get_closest()
-	tween = get_tree().create_tween()
+	await get_closest()
+	
 	randomize()
 	while true :
 		var new_target_index = randi_range(0, important_waypoints.size() - 1) 
@@ -43,12 +45,28 @@ func move() -> void:
 	var dirted_path = astar.get_id_path(closest_waypoint.get_instance_id(), important_waypoints[target_index].get_instance_id())
 	for pointId in dirted_path:
 		astar.set_point_weight_scale(pointId, astar.get_point_weight_scale(pointId) + 1)
-	for point in path:
-		tween.tween_property(self, "position", point, 0.16)
-	tween.tween_callback(move)
+	moveMonster(0, path)
+	
+	
 	
 func get_closest() -> void:
 	for node in waypoints:
 		if (self.global_transform.origin.distance_to(closest_waypoint.global_transform.origin) > self.global_transform.origin.distance_to(node.global_transform.origin)):
 			closest_waypoint = node
+	print(self.global_transform.origin, closest_waypoint.global_transform.origin)
+
+func actualise_path():
+	tween.kill()
+	await get_tree().create_timer(1).timeout;
+	move()
+	
+func moveMonster(index, path):
+	if tween:
+		tween.kill()
+	tween = get_tree().create_tween()
+	tween.tween_property(self, "position", path[index], SPEED)
+	if path.size() - 1 > index:
+		tween.tween_callback(moveMonster.bind(index+1, path))
+	else:
+		move()
 	pass
