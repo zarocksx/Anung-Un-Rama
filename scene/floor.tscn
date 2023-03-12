@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8vqgwotwrwbr"]
+[gd_scene load_steps=6 format=3 uid="uid://c8vqgwotwrwbr"]
 
+[ext_resource type="Script" path="res://scene/apply_state_interest_point.gd" id="1_lx8s1"]
 [ext_resource type="Material" uid="uid://csly448tkrdsw" path="res://asset/stone_wall/stone_wall.tres" id="1_yq0xe"]
+[ext_resource type="PackedScene" uid="uid://dvp27eox5r75o" path="res://waypoint.tscn" id="2_8kmv3"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ibj7x"]
 _surfaces = [{
@@ -35,6 +37,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ibj7x")
 
 [node name="ground" type="Node3D"]
+script = ExtResource("1_lx8s1")
 
 [node name="SM_StoneDAle_01" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.5, 0, -1.5)
@@ -131,3 +134,6 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.5, 0, -0.5)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_0rtnl")
 skeleton = NodePath("")
+
+[node name="Waypoint" parent="." instance=ExtResource("2_8kmv3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.982857, -2)

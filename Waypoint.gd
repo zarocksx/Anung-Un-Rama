@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var is_interst_point: bool = false
+var is_interest_point: bool = false
 var neighbors: Array = []
 
 

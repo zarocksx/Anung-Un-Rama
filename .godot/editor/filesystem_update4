@@ -11,3 +11,10 @@ res://scene/monster.tscn
 res://scene/Monster.gd
 res://Monster.gd
 res://Spatial.tscn
+res://asset/stone_wall/stone_wall.tres
+res://scene/floor.tscn
+res://scene/room_3.tscn
+res://scene/apply_state_interest_point.gd
+res://scene/hallway.tscn
+res://TogglableDoor.gd
+res://scene/togglable_door.tscn

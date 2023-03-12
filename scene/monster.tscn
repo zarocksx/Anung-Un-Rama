@@ -4,8 +4,13 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bfx2t"]
 
-[node name="Origin" type="Node3D"]
-
-[node name="Monster" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_bfx2t")
+[node name="monster" type="Node3D" groups=["Monster"]]
 script = ExtResource("1_1cu4g")
+
+[node name="monster_mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_bfx2t")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16823, 0)
+light_color = Color(1, 0.101961, 0.101961, 1)
+omni_range = 5.412

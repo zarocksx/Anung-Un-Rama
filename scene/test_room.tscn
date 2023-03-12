@@ -92,9 +92,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
 [node name="room_2" parent="." instance=ExtResource("2_8opkj")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, 23.9483)
 
-[node name="room_3" parent="." instance=ExtResource("2_8opkj")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.309776, 0, 23.9483)
-
 [node name="room_4" parent="." instance=ExtResource("2_8opkj")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 23.948)
 
