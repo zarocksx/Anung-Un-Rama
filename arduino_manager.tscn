@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1kjpsf8eujoc"]
+
+[ext_resource type="Script" path="res://arduinoManager.gd" id="1_w230o"]
+
+[node name="arduinoManager" type="Node"]
+script = ExtResource("1_w230o")
