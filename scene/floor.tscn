@@ -137,3 +137,4 @@ skeleton = NodePath("")
 
 [node name="Waypoint" parent="." instance=ExtResource("2_8kmv3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.982857, -2)
+visible = false

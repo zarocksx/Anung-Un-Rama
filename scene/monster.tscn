@@ -1,18 +1,49 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4fe2spilcjhg"]
+[gd_scene load_steps=7 format=3 uid="uid://b4fe2spilcjhg"]
 
 [ext_resource type="Script" path="res://Monster.gd" id="1_1cu4g"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_bfx2t"]
+[sub_resource type="Gradient" id="Gradient_7077h"]
+offsets = PackedFloat32Array(0, 0.457912)
+colors = PackedColorArray(0.44, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pgo0x"]
+gradient = SubResource("Gradient_7077h")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u1s8r"]
+emission_shape = 1
+emission_sphere_radius = 1.0
+gravity = Vector3(0, -5, 0)
+tangential_accel_min = 3.94
+tangential_accel_max = 3.94
+color = Color(0.423529, 0, 0, 1)
+color_ramp = SubResource("GradientTexture1D_pgo0x")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gw75d"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_7xv28"]
+material = SubResource("StandardMaterial3D_gw75d")
+radius = 0.3
+height = 0.6
 
 [node name="monster" type="Node3D" groups=["Monster"]]
 script = ExtResource("1_1cu4g")
 
-[node name="monster_mesh" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_bfx2t")
-
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16823, 0)
-light_color = Color(1, 0.101961, 0.101961, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.731826, 0)
+light_color = Color(0.666667, 0.188235, 0.160784, 1)
 omni_range = 5.412
 
 [node name="Draw" type="ImporterMeshInstance3D" parent="."]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06564, 0)
+amount = 100
+lifetime = 0.79
+preprocess = 1.22
+speed_scale = 0.71
+randomness = 0.23
+visibility_aabb = AABB(-2.4313, -4, -1.96737, 4.86259, 8, 3.93474)
+trail_lifetime = 3.75
+process_material = SubResource("ParticleProcessMaterial_u1s8r")
+draw_pass_1 = SubResource("SphereMesh_7xv28")

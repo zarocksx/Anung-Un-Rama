@@ -10,3 +10,4 @@ res://scene/cameraController.gd
 res://scene/map.tscn
 res://Monster.gd
 res://scene/test_room.tscn
+res://scene/floor.tscn
