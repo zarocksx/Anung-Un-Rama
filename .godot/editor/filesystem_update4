@@ -1,12 +1,2 @@
-res://scene/hallway.tscn
-res://asset/brick/brick.tres
-res://scene/room_1.tscn
-res://scene/room_2.tscn
-res://scene/room_3.tscn
-res://scene/togglable_door.tscn
-res://scene/monster.tscn
-res://TogglableDoor.gd
-res://scene/cameraController.gd
-res://scene/map.tscn
-res://Monster.gd
 res://scene/test_room.tscn
+res://asset/brick/brick.tres
