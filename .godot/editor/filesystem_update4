@@ -1,2 +1,10 @@
 res://scene/test_room.tscn
 res://asset/brick/brick.tres
+res://scene/map.tscn
+res://scene/cameraController.gd
+res://scene/hallway.tscn
+res://scene/room_1.tscn
+res://scene/room_2.tscn
+res://scene/room_3.tscn
+res://scene/togglable_door.tscn
+res://scene/monster.tscn
