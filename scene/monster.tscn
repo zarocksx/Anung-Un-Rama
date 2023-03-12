@@ -14,3 +14,5 @@ mesh = SubResource("CapsuleMesh_bfx2t")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16823, 0)
 light_color = Color(1, 0.101961, 0.101961, 1)
 omni_range = 5.412
+
+[node name="Draw" type="ImporterMeshInstance3D" parent="."]
