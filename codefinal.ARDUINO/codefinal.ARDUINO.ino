@@ -128,78 +128,47 @@ const int ledC = 11;
 const int ledD = 12;
 const int ledOK = 10;
 
-bool eW = 0;
+bool eA = 0;
 bool eB = 0;
 bool eC = 0;
 bool eD = 0;
 bool eOK = 0;
 
+bool e1 = 0;
+bool e2 = 0;
+bool e3 = 0;
+
+
 void setup() {
   Serial.begin(9600);
-  pinMode(buzzerPin, OUTPUT); // Définit la pin du buzzer comme une sortie
   pinMode(ledA, OUTPUT);
   pinMode(ledB, OUTPUT);
   pinMode(ledC, OUTPUT);
   pinMode(ledD, OUTPUT);
   pinMode(ledOK, OUTPUT);
-   for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2) {
-
-    // calculates the duration of each note
-    divider = melody[thisNote + 1];
-    if (divider > 0) {
-      // regular note, just proceed
-      noteDuration = (wholenote) / divider;
-    } else if (divider < 0) {
-      // dotted notes are represented with negative durations!!
-      noteDuration = (wholenote) / abs(divider);
-      noteDuration *= 1.5; // increases the duration in half for dotted notes
-    }
-
-    // we only play the note for 90% of the duration, leaving 10% as a pause
-    tone(buzzerPin, melody[thisNote], noteDuration * 0.9);
-
-    // Wait for the specief duration before playing the next note.
-    delay(noteDuration);
-
-    // stop the waveform generation before the next note.
-    noTone(buzzerPin);
-  }
   startAnimation();
 }
-  
-  
 
-void loop() 
-{
+void loop() {
   if (analogRead(A0) >= 0 && analogRead(A0) <= 99) { //A
-  for (int i = 0; i < 8; i++) { // Joue chaque note une par une
-        tone(buzzerPin, Notes[i], 200); // Joue la note pendant 200 millisecondes
-       }
     while (analogRead(A0) >= 0 && analogRead(A0) <= 99) {}
-    if (eW == 0) {
-      eW = 1;
+    if (eA == 0) {
+      eA = 1;
       digitalWrite(ledA, HIGH);
       Serial.println("a");
-       
-    delay(50); // Attend 50 millisecondes avant de jouer la prochaine note
-    } else if (eW == 1) {
-      eW = 0;
+    } else if (eA == 1) {
+      eA = 0;
       digitalWrite(ledA, LOW);
       Serial.println("a");
     }
   }
 
   else if (analogRead(A0) >= 500 && analogRead(A0) <= 599) { //B
-  for (int i = 0; i < 8; i++) { // Joue chaque note une par une
-      tone(buzzerPin, Notes[i], 200); // Joue la note pendant 200 millisecondes
-    }
     while (analogRead(A0) >= 500 && analogRead(A0) <= 599) {}
     if (eB == 0) {
       eB = 1;
       digitalWrite(ledB, HIGH);
       Serial.println("b");
-      delay(50); // Attend 50 millisecondes avant de jouer la prochaine note
-
     } else if (eB == 1) {
       eB = 0;
       digitalWrite(ledB, LOW);
@@ -207,9 +176,6 @@ void loop()
     }
   }
   else if (analogRead(A0) >= 600 && analogRead(A0) <= 750) { //C
-  for (int i = 0; i < 8; i++) { // Joue chaque note une par une
-        tone(buzzerPin, Notes[i], 200); // Joue la note pendant 200 millisecondes
-       }
     while (analogRead(A0) >= 600 && analogRead(A0) <= 750) {}
     if (eC == 0) {
       eC = 1;
@@ -223,9 +189,6 @@ void loop()
     }
   }
   else if (analogRead(A0) >= 751 && analogRead(A0) <= 799) { //D
-  for (int i = 0; i < 8; i++) { // Joue chaque note une par une
-        tone(buzzerPin, Notes[i], 200); // Joue la note pendant 200 millisecondes
-       }
     while (analogRead(A0) >= 751 && analogRead(A0) <= 799) {}
     if (eD == 0) {
       eD = 1;
@@ -240,7 +203,7 @@ void loop()
   }
   else if (analogRead(A0) >= 800 && analogRead(A0) <= 899) { //ok
     while (analogRead(A0) >= 800 && analogRead(A0) <= 899) {}
-    eW = 0;
+    eA = 0;
     eB = 0;
     eC = 0;
     eD = 0;
@@ -255,6 +218,45 @@ void loop()
     digitalWrite(ledOK, LOW);
   }
   delay(50);
+  ////////////////// change de input /////////////////////////
+  if (analogRead(A1) >= 0 && analogRead(A1) <= 99) { //A
+    while (analogRead(A1) >= 0 && analogRead(A1) <= 99) {}
+    if (eA == 0) {
+      e1 = 1;
+      digitalWrite(ledA, HIGH);
+      Serial.println("1");
+    } else if (eA == 1) {
+      e1 = 0;
+      digitalWrite(ledA, LOW);
+      Serial.println("1");
+    }
+  }
+
+  else if (analogRead(A1) >= 500 && analogRead(A1) <= 599) { //B
+    while (analogRead(A1) >= 500 && analogRead(A1) <= 599) {}
+    if (eB == 0) {
+      e2 = 1;
+      digitalWrite(ledB, HIGH);
+      Serial.println("2");
+    } else if (eB == 1) {
+      e2 = 0;
+      digitalWrite(ledB, LOW);
+      Serial.println("2");
+    }
+  }
+  else if (analogRead(A1) >= 600 && analogRead(A1) <= 750) { //C
+    while (analogRead(A1) >= 600 && analogRead(A1) <= 750) {}
+    if (e3 == 0) {
+      e3 = 1;
+      digitalWrite(ledC, HIGH);
+      Serial.println("3");
+    } else if (e3 == 1) {
+      e3 = 0;
+      digitalWrite(ledC, LOW);
+      Serial.println("3");
+
+    }
+  }
 }
 
 void startAnimation() {
