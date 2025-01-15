@@ -1,5 +1,5 @@
 # Anung Un Rama
-(EN Below)
+##FR
 Anung Un Rama est un jeu réalisé pendant la Bruxelles Game Jam 2023
 Le thème de cette Game Jam était 'Stay inside'
 
@@ -10,7 +10,7 @@ Afin de réaliser cette tâche vous devez utiliser la M.S.I.-2000 une interface 
 A l'aide des runes, ouvrez et/ou fermez des portes afin de bloquer le monstre et utiliser le bouton "tête de mort" pour changer de point de vue
 
 
-
+##EN
 Anung Un Rama is a game created during the Brussels Game Jam 2023. The theme of this Game Jam was "Stay Inside."
 
 The goal of the B.G.J. is to blend different skills. The objective of the game is to successfully block a monster moving through the abbey.
